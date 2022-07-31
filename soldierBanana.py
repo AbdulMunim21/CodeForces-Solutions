@@ -9,6 +9,9 @@ total_cost = 0
 for i in range(banana_wants):
     total_cost = total_cost + (banana_cost * (i+1))
 
-total_cost = total_cost - soldier_cost
+if total_cost <= soldier_cost:
+    print(0)
 
-print(total_cost)
+else:
+    total_cost = total_cost - soldier_cost
+    print(total_cost)
